@@ -1,7 +1,7 @@
 # Node-Express-Notes
 My notes for important node and express information
-#Server.js
-##Importing modules
+# Server.js
+## Importing modules
 1. import express from 'express'
    Imports the express module, which is a Node.js framework.
    It provides methods to handle HTTP requests, set up middleware*, and define routing*.
@@ -12,7 +12,7 @@ My notes for important node and express information
    Imports routing logic from a local file named catalogRoutes.js
    This file is exports an Express Router with endpoints related to services like GET, POST, PUT, DELETE.
 
-##Code lines
+## Code lines
 1. const app = express();
    Creates an instance of the express application.
    This app object is used to define routes, middleware, and start the server.
@@ -33,6 +33,6 @@ My notes for important node and express information
    Starts the server and listens on port 8080.
    The callback logs a confirmation message when the server is successfully running.
          
-#catalogRoutes.js
+# catalogRoutes.js
 
 MiddleWare*: Middleware is software that acts as a bridge, enabling different applications and systems to communicate and share data with each other, often in a distributed environment.         
