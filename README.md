@@ -1,6 +1,6 @@
 # Node-Express-Notes
 My notes for important node and express information
-# Server.js
+# server.js
 ## Importing modules
 1. import express from 'express'
    Imports the express module, which is a Node.js framework.
