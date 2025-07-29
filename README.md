@@ -35,4 +35,9 @@ My notes for important node and express information
          
 # catalogRoutes.js
 
-MiddleWare*: Middleware is software that acts as a bridge, enabling different applications and systems to communicate and share data with each other, often in a distributed environment.         
+MiddleWare*: Middleware is software that acts as a bridge, enabling different applications and systems to communicate and share data with each other, often in a distributed environment. It's the code between the request (post or get for example) and the response. For example:
+   const logger = async (req,res) => { console.log(req.path);};
+   This is a simple middleware.
+   Sometimes you need to use 'next()' to pass the handler to the next middleware in the chain, for example:
+   const logger = async (req,res,next) => { console.log(req.path); next();};
+   if the logger is not the last middleware in the chain, you must call next to move to the next middleware OR end the logger with a res.send(...) statement, depends on your strategy.
